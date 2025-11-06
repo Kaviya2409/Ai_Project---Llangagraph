@@ -3,7 +3,7 @@
 An intelligent AI agent built with LangGraph that performs arithmetic operations using natural language processing. This agent leverages Ollama's Llama3.2 model to understand user requests and execute mathematical computations through integrated tools.
 
 <div align="center">
-  <img src="./static/studio_ui.png" alt="Graph view in LangGraph studio UI" width="75%" />
+  <img src="" alt="" width="" />
 </div>
 
 ## 🚀 Features
