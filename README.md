@@ -1,8 +1,5 @@
 # 🤖 AI Arithmetic Agent
 
-[![CI](https://github.com/USERNAME/ai-project/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/USERNAME/ai-project/actions/workflows/unit-tests.yml)
-[![Integration Tests](https://github.com/USERNAME/ai-project/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/USERNAME/ai-project/actions/workflows/integration-tests.yml)
-
 An intelligent AI agent built with LangGraph that performs arithmetic operations using natural language processing. This agent leverages Ollama's Llama3.2 model to understand user requests and execute mathematical computations through integrated tools.
 
 <div align="center">
