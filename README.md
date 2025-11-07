@@ -1,30 +1,7 @@
-🤖 AI Arithmetic Agent - Perfect README
-
-```ai-project/README.md
-# 🤖 AI Arithmetic Agent with LangGraph
-
-[![CI](https://github.com/Kaviya2409/Ai_Project---Llangagraph/actions/workflows/unit-tests.yml/badge.svg)](https://github.com/Kaviya2409/Ai_Project---Llangagraph/actions/workflows/unit-tests.yml)
-[![Integration Tests](https://github.com/Kaviya2409/Ai_Project---Llangagraph/actions/workflows/integration-tests.yml/badge.svg)](https://github.com/Kaviya2409/Ai_Project---Llangagraph/actions/workflows/integration-tests.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+🤖 AI Arithmetic Agent
 
 A sophisticated AI agent built with LangGraph that understands natural language and performs arithmetic computations through intelligent tool integration. This project demonstrates the power of combining large language models with structured function calling for precise mathematical operations.
 
-## 📸 Project Showcase
-
-<div align="center">
-
-### LangGraph Studio Visualization
-![LangGraph Studio Interface](./static/studio_ui.png)
-
-### Agent in Action
-![Terminal Output](./static/terminal-demo.png)
-*Agent processing arithmetic queries with tool execution*
-
-### Project Architecture
-![Architecture Diagram](./static/architecture-diagram.png)
-*High-level system architecture showing data flow*
-
-</div>
 
 ## 🚀 Key Features
 
@@ -82,11 +59,6 @@ ai-project/
 └── 📄 README.md                   # This documentation
 ```
 
-## 🏗️ Architecture Overview
-
-### System Architecture
-![System Architecture](./static/architecture-diagram.png)
-
 ### Component Breakdown
 
 1. **🤖 LLM Engine**: ChatOllama with Llama3.2:1b model
@@ -95,12 +67,6 @@ ai-project/
 4. **🔄 Workflow Engine**: LangGraph orchestration
 5. **🎛️ Interface**: CLI and LangGraph Studio
 
-### Data Flow
-```
-User Input → LLM Processing → Tool Selection → Function Execution → Response Generation → Output
-```
-
-## 🧮 Supported Operations
 
 ### Arithmetic Functions
 
@@ -139,7 +105,7 @@ User Input → LLM Processing → Tool Selection → Function Execution → Resp
 
 ```bash
 # Clone the repository
-git clone https://github.com/Kaviya2409/Ai_Project---Llangagraph.git
+git clone 
 cd ai-project
 
 # Install dependencies with UV
@@ -156,7 +122,7 @@ pip install -e . "langgraph-cli[inmem]"
 # Start the development server
 langgraph dev
 
-# Open LangGraph Studio at: http://localhost:8123
+# Open LangGraph Studio at: http://localhost:8080
 ```
 
 #### Option 2: Direct Python Execution
@@ -178,43 +144,7 @@ result = graph.invoke({
 })
 
 print(result)
-```
 
-## 🖥️ Usage Examples
-
-### Terminal Output
-![Terminal Usage Example](./static/terminal-demo.png)
-
-### Sample Interactions
-
-```python
-# Example 1: Addition
->>> result = graph.invoke({
-...     "messages": [{"type": "human", "content": "What is 15 + 7?"}],
-...     "changeme": 36,
-...     "llm_calls": 0
-... })
->>> print(result['messages'][-1].content)
-"The result of adding 15 and 7 is 22."
-
-# Example 2: Multiplication
->>> result = graph.invoke({
-...     "messages": [{"type": "human", "content": "Multiply 8 by 6"}],
-...     "changeme": 36,
-...     "llm_calls": 0
-... })
->>> print(result['messages'][-1].content)
-"8 multiplied by 6 equals 48."
-
-# Example 3: Division
->>> result = graph.invoke({
-...     "messages": [{"type": "human", "content": "What's 100 divided by 4?"}],
-...     "changeme": 36,
-...     "llm_calls": 0
-... })
->>> print(result['messages'][-1].content)
-"100 divided by 4 is 25.0."
-```
 
 ## 🔧 Configuration
 
@@ -274,11 +204,6 @@ uv run pytest tests/integration/
 uv run pytest --cov=src --cov-report=html
 ```
 
-### Test Results
-![Test Results](./static/test-results.png)
-
-## 📊 Development Workflow
-
 ### Code Quality
 ```bash
 # Linting
@@ -299,14 +224,10 @@ uv run ruff check . && uv run mypy src/ && uv run pytest
    langgraph dev
    ```
 
-2. **Open Studio**: Navigate to `http://localhost:8123`
+2. **Open Studio**: Navigate to `http://localhost:8080`
 
 3. **Debug workflow**: Use the visual interface to test and debug
 
-### Studio Interface Features
-![LangGraph Studio Features](./static/studio-features.png)
-
-## 🔧 Extending the Agent
 
 ### Adding New Tools
 
@@ -370,9 +291,6 @@ EXPOSE 8123
 CMD ["langgraph", "dev", "--host", "0.0.0.0"]
 ```
 
-### Environment Setup
-![Deployment Architecture](./static/deployment-architecture.png)
-
 ## 🤝 Contributing
 
 1. **Fork** the repository
@@ -383,12 +301,10 @@ CMD ["langgraph", "dev", "--host", "0.0.0.0"]
 6. **Push to the branch**: `git push origin feature/amazing-feature`
 7. **Open a Pull Request**
 
-### Contribution Guidelines
-![Contribution Workflow](./static/contribution-workflow.png)
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE] file for details.
 
 ## 🙏 Acknowledgments
 
@@ -417,50 +333,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-<div align="center">
 
 **⭐ Star this repository if it helped you!**
 
 Made with ❤️ by [Kaviya2409](https://github.com/Kaviya2409)
 
-[![GitHub followers](https://img.shields.io/github/followers/Kaviya2409?style=social)](https://github.com/Kaviya2409)
-[![GitHub stars](https://img.shields.io/github/stars/Kaviya2409/Ai_Project---Llangagraph?style=social)](https://github.com/Kaviya2409/Ai_Project---Llangagraph)
-
-</div>
-```
-
-## 📸 Screenshots You Need to Add
-
-To make this README complete, you'll need to create these screenshots and place them in the `static/` folder:
-
-1. **`terminal-demo.png`** - Show terminal output when running the agent
-2. **`architecture-diagram.png`** - Create a simple diagram showing the system architecture
-3. **`test-results.png`** - Show pytest results
-4. **`studio-features.png`** - Show LangGraph Studio interface
-5. **`deployment-architecture.png`** - Show deployment setup
-6. **`contribution-workflow.png`** - Show Git workflow
-
-## 🚀 Commands to Apply This README
-
-```bash
-# Navigate to your project
-cd /home/kaviya/projects/ai-project
-
-# Add the new README
-git add README.md
-
-# Commit with a detailed message
-git commit -m "Add comprehensive README.md with complete documentation
-
-- Added detailed project overview and features
-- Included technology stack with versions
-- Added project structure visualization
-- Created architecture section with diagrams
-- Added installation and usage guides
-- Included testing and development instructions
-- Added screenshots placeholders for visual documentation
-- Added contribution guidelines and resources
-- Updated with proper GitHub badges and links"
-
-# Push to GitHub
-git push origin main
